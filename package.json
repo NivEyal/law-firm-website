@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp -r law-firm-free/assets/js dist/assets/js && cp -r law-firm-free/assets/images dist/assets/images && cp -r law-firm-free/assets/fonts dist/assets/fonts && cp -r law-firm-free/assets/css dist/assets/css",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "vite-plugin-static-copy": "^4.1.0"
   }
 }
