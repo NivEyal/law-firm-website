@@ -1,73 +1,114 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="he" dir="rtl">
 
 <head>
     <meta charset="utf-8">
-    
-    <!--====== Title ======-->
-    <title>Law Firm - Lawyer and Law Firm Template</title>
-    
-    <meta name="description" content="">
+
+    <title>בן יצחק ירון - משרד עורכי דין ונוטריון</title>
+
+    <meta name="description" content="בן יצחק ירון משרד עורכי דין ונוטריון - שירות מקצועי, מהיר ואמין">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="/assets/favicon-zuOPc7Z4.png" type="image/png">
-        
-    <!--====== Animate CSS ======-->
-        
-    <!--====== Magnific Popup CSS ======-->
-        
-    <!--====== Slick CSS ======-->
-        
-    <!--====== Line Icons CSS ======-->
-        
-    <!--====== Bootstrap CSS ======-->
-    
-    <!--====== Default CSS ======-->
-    
-    <!--====== Style CSS ======-->
-    
-  <link rel="stylesheet" crossorigin href="/assets/index-BUNMbfJs.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/fonts/lineicons/font-css/LineIcons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6, p, a, span, li, input, textarea, button, label {
+            font-family: 'Assistant', sans-serif !important;
+        }
+        body { direction: rtl; text-align: right; }
+        .navbar-nav { flex-direction: row-reverse; }
+        .navbar { flex-direction: row-reverse; }
+        .header_top_content { flex-direction: row-reverse; }
+        .navbar-brand { margin-right: 0; margin-left: 1rem; }
+        .ml-auto { margin-left: 0 !important; margin-right: auto !important; }
+        .about_list li { flex-direction: row-reverse; text-align: right; }
+        .about_check { margin-right: 0; margin-left: 20px; }
+        .single_practice { flex-direction: row-reverse; text-align: right; }
+        .practice_icon { margin-right: 0; margin-left: 20px; }
+        .footer_wrapper { flex-direction: row-reverse; }
+        .subscribe_form form { flex-direction: row-reverse; }
+        .footer_link { margin-right: 0; margin-left: 50px; }
+
+        /* Reviews section */
+        #reviews { background: #f8f6f2; }
+        .reviews_grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin-top: 40px; }
+        .review_card { background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); transition: transform 0.2s, box-shadow 0.2s; }
+        .review_card:hover { transform: translateY(-4px); box-shadow: 0 6px 24px rgba(0,0,0,0.12); }
+        .review_header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; flex-direction: row-reverse; }
+        .review_avatar { width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #8B7355, #c9a96e); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 18px; flex-shrink: 0; }
+        .review_meta { text-align: right; }
+        .review_name { font-weight: 700; font-size: 15px; color: #1a1a1a; margin: 0; }
+        .review_date { font-size: 12px; color: #999; margin: 0; }
+        .review_stars { color: #f4b942; font-size: 14px; margin-bottom: 2px; }
+        .review_text { font-size: 14px; color: #555; line-height: 1.7; text-align: right; }
+        .owner_reply { background: #f0ece4; border-right: 3px solid #8B7355; padding: 10px 14px; margin-top: 12px; border-radius: 0 6px 6px 0; }
+        .owner_reply_label { font-size: 12px; font-weight: 700; color: #8B7355; margin-bottom: 4px; }
+        .owner_reply_text { font-size: 13px; color: #666; margin: 0; }
+        .reviews_summary { display: flex; align-items: center; gap: 20px; background: #fff; border-radius: 12px; padding: 24px 32px; margin-bottom: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); flex-direction: row-reverse; }
+        .reviews_score { font-size: 56px; font-weight: 700; color: #1a1a1a; line-height: 1; }
+        .reviews_score_detail { text-align: right; }
+        .reviews_score_stars { color: #f4b942; font-size: 22px; }
+        .reviews_score_count { font-size: 14px; color: #888; margin-top: 4px; }
+
+        .header_firm_name { font-size: 13px; color: #c9a96e; font-weight: 700; letter-spacing: 0.5px; }
+
+        /* fix navbar toggle for RTL */
+        .navbar-toggler { margin-left: 0; }
+
+        .single_form input, .single_form textarea { text-align: right; direction: rtl; }
+
+        @media (max-width: 768px) {
+            .reviews_grid { grid-template-columns: 1fr; }
+            .reviews_summary { flex-direction: column; text-align: center; }
+            .reviews_score_detail { text-align: center; }
+        }
+    </style>
 </head>
 
 <body>
-    <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-    
-    
     <!--====== HEADER PART START ======-->
-    
+
     <header class="header_area">
         <div class="header_top">
             <div class="container">
                 <div class="header_top_content d-md-flex justify-content-between">
                     <div class="header_info text-center">
                         <ul>
-                            <li><i class="lni lni-mobile"></i> <a href="#"> +800-9233-3213</a></li>
-                            <li><i class="lni lni-envelope"></i> <a href="#"> hello@yourlawfirm.com</a></li>
+                            <li><i class="lni lni-mobile"></i> <a href="tel:+97235754040"> 03-575-4040</a></li>
+                            <li><i class="lni lni-envelope"></i> <a href="mailto:yaron@ben-yitzhak.co.il"> yaron@ben-yitzhak.co.il</a></li>
                         </ul>
-                    </div> <!-- header info -->
+                    </div>
                     <div class="header_social d-none d-md-block">
                         <ul>
                             <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                            <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
                             <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
                             <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
                         </ul>
-                    </div> <!-- header social -->
-                </div> <!-- header top content -->
-            </div> <!-- container -->
-        </div> <!-- header top -->
-        
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="header_navbar">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="index.html">
-                                <img src="data:image/png;base64,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" alt="Logo">
+                                <span style="font-size:18px; font-weight:800; color:#8B7355; line-height:1.2; display:block;">בן יצחק ירון</span>
+                                <span class="header_firm_name">משרד עורכי דין ונוטריון</span>
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -78,86 +119,83 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
+                                        <a class="page-scroll" href="#home">ראשי</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#about">About</a>
+                                        <a class="page-scroll" href="#about">אודות</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#practice">Practice Areas</a>
+                                        <a class="page-scroll" href="#practice">תחומי עיסוק</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Team</a>
+                                        <a class="page-scroll" href="#reviews">ביקורות</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#blog">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">Contact</a>
+                                        <a class="page-scroll" href="#contact">צור קשר</a>
                                     </li>
                                 </ul>
-                            </div> <!-- navbar collapse -->
-                            
-                            <div class="navbar-btn d-none d-sm-inline-block">
-                                <a class="main-btn" data-scroll-nav="0" href="#contact">Free Consultation</a>
                             </div>
-                        </nav> <!-- navbar -->
+
+                            <div class="navbar-btn d-none d-sm-inline-block">
+                                <a class="main-btn" data-scroll-nav="0" href="#contact">ייעוץ ראשוני</a>
+                            </div>
+                        </nav>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- header navbar -->
+                </div>
+            </div>
+        </div>
     </header>
-    
+
     <!--====== HEADER PART ENDS ======-->
-    
+
     <!--====== SLIDER PART START ======-->
 
-     <div id="home" class="header_slider slider-active">
-        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(/assets/slider-1-DyorMjVc.jpg)">
+    <div id="home" class="header_slider slider-active">
+        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-1.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="slider_content">
-                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">Experienced Court Performance</h2>
-                            <p data-animation="fadeInUp" data-delay="0.7s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua consetetur sadipscing elitr, sed dianonumy.</p>
-                            <a href="#" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">Get Started</a>
-                        </div> <!-- slider content -->
+                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">ניסיון ומקצועיות בבית המשפט</h2>
+                            <p data-animation="fadeInUp" data-delay="0.7s">משרד בן יצחק ירון מספק ייצוג משפטי מיומן ושירות נוטריוני מהיר ואמין. אנחנו כאן בשבילך בכל שלב של ההליך המשפטי.</p>
+                            <a href="#contact" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">צור קשר עכשיו</a>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
-        
-        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(/assets/slider-2-DqC7T_yz.jpg)">
+                </div>
+            </div>
+        </div>
+
+        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-2.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="slider_content">
-                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">Winners for Global Legal Innovation</h2>
-                            <p data-animation="fadeInUp" data-delay="0.7s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua consetetur sadipscing elitr, sed dianonumy.</p>
-                            <a href="#" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">Get Started</a>
-                        </div> <!-- slider content -->
+                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">שירות נוטריוני מהיר ומקצועי</h2>
+                            <p data-animation="fadeInUp" data-delay="0.7s">חתימות נוטריוניות, אימות מסמכים ושירותים משפטיים - הכל במקום אחד. זמינים עבורך בהתראה קצרה.</p>
+                            <a href="#contact" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">קבע תור</a>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
-        
-        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(/assets/slider-3-DqX7zqrp.jpg)">
+                </div>
+            </div>
+        </div>
+
+        <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/slider-3.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
                         <div class="slider_content">
-                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">Toughest Defense Lawyers for Your Case</h2>
-                            <p data-animation="fadeInUp" data-delay="0.7s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua consetetur sadipscing elitr, sed dianonumy.</p>
-                            <a href="#" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">Learn More</a>
-                        </div> <!-- slider content -->
+                            <h2 class="slider_title" data-animation="fadeInUp" data-delay="0.2s">ליווי משפטי בנדל"ן ובנקאות</h2>
+                            <p data-animation="fadeInUp" data-delay="0.7s">מומחיות בעסקאות נדל"ן, משכנתאות ועסקאות בנקאיות. ייעוץ מקצועי שיחסוך לך זמן וכסף.</p>
+                            <a href="#about" class="main-btn" data-animation="fadeInUp" data-delay="1.1s">קרא עוד</a>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
-    </div> <!-- header slider -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--====== SLIDER PART ENDS ======-->
-    
+
     <!--====== ABOUT PART START ======-->
 
     <section id="about" class="about_area">
@@ -166,41 +204,41 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="about_law_title mt-30">
-                            <h4 class="title">Something About Law Firm</h4>
-                        </div> <!-- about law title -->
+                            <h4 class="title">בן יצחק ירון - משרד עורכי דין ונוטריון</h4>
+                        </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="about_law_content mt-30">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolo.</p>
-                            <a href="#" class="main-btn">Read More</a>
-                        </div> <!-- about law title -->
+                            <p>משרד עו"ד ירון בן יצחק ברמת גן מציע שירות משפטי מקצועי, אישי ומסור. עם ניסיון רב בתחומי המקרקעין, הבנקאות, הנוטריון ועוד - המשרד פועל לאינטרס הלקוח תוך מתן מענה מהיר ויעיל.</p>
+                            <a href="#contact" class="main-btn">צור קשר</a>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- about law area -->
-        
+                </div>
+            </div>
+        </div>
+
         <div class="about_hire_area pt-80 pb-130">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="about_image mt-50">
-                            <img src="/assets/about-C7-MN-4F.jpg" alt="about">
-                        </div> <!-- about image -->
+                            <img src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=800" alt="about">
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about_content mt-50">
                             <div class="section_title">
-                                <h3 class="title">Why Hire Us?</h3>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolomagna aliquyam erat, sed diam voluptua.</p>
-                            </div> <!-- section title -->
+                                <h3 class="title">למה לבחור בנו?</h3>
+                                <p>אנו מחויבים להעניק ללקוחותינו את השירות הטוב ביותר - מקצועי, אישי וזמין.</p>
+                            </div>
                             <ul class="about_list">
                                 <li class="d-flex">
                                     <div class="about_check">
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content media-body">
-                                        <h5 class="title">Serving More Than 25 Years</h5>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed dianonumy eirmod tempor invidunt </p>
+                                        <h5 class="title">ניסיון רב שנים</h5>
+                                        <p>ירון בן יצחק מביא ניסיון מקצועי עשיר בתחומים רבים של המשפט, עם רקורד מוכח של הצלחות.</p>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -208,8 +246,8 @@
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content media-body">
-                                        <h5 class="title">Great Case Portfolios</h5>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed dianonumy eirmod tempor invidunt </p>
+                                        <h5 class="title">מומחיות במקרקעין ובנקאות</h5>
+                                        <p>התמחות מעמיקה בעסקאות נדל"ן, משכנתאות, רישום בטאבו וכל ההיבטים המשפטיים הנלווים.</p>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -217,8 +255,8 @@
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content media-body">
-                                        <h5 class="title">Experienced Lawyers and Resources</h5>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed dianonumy eirmod tempor invidunt </p>
+                                        <h5 class="title">שירות נוטריוני זמין</h5>
+                                        <p>חתימות נוטריוניות ואימות מסמכים בזמינות גבוהה - לעיתים גם בשעות הערב ובהתראה קצרה.</p>
                                     </div>
                                 </li>
                                 <li class="d-flex">
@@ -226,21 +264,20 @@
                                         <i class="lni lni-checkmark-circle"></i>
                                     </div>
                                     <div class="about_list_content media-body">
-                                        <h5 class="title">Satisfying Success Rate</h5>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed dianonumy eirmod tempor invidunt </p>
+                                        <h5 class="title">גישה אנושית ואישית</h5>
+                                        <p>יחס חם, אדיב ומסביר פנים - כי כל לקוח מקבל תשומת לב מלאה ומקצועית.</p>
                                     </div>
                                 </li>
-
                             </ul>
-                        </div> <!-- about content -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- about hire area -->
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--====== ABOUT PART ENDS ======-->
-    
+
     <!--====== PRACTICE PART START ======-->
 
     <section id="practice" class="practice_area gray-bg pt-120 pb-130">
@@ -248,33 +285,66 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="section_title pb-20">
-                        <h3 class="title">Areas of Practice</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolomagna aliquyam erat, sed diam voluptua.</p>
-                    </div> <!-- section title -->
+                        <h3 class="title">תחומי עיסוק</h3>
+                        <p>המשרד מציע מגוון רחב של שירותים משפטיים מקצועיים, תוך התמקדות בצרכי הלקוח.</p>
+                    </div>
                 </div>
-            </div> <!-- row -->
+            </div>
             <div class="row">
+                <div class="col-lg-6">
+                    <div class="single_practice mt-30 d-sm-flex">
+                        <div class="practice_icon">
+                            <i class="lni lni-home"></i>
+                        </div>
+                        <div class="practice_content media-body">
+                            <h4 class="practice_title"><a href="#">מקרקעין ונדל"ן</a></h4>
+                            <p>ליווי מלא בעסקאות רכישה ומכירה של דירות ונכסים, בדיקות נאותות, רישום בטאבו וייעוץ בכל שלב.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_practice mt-30 d-sm-flex">
+                        <div class="practice_icon">
+                            <i class="lni lni-stamp"></i>
+                        </div>
+                        <div class="practice_content media-body">
+                            <h4 class="practice_title"><a href="#">שירותי נוטריון</a></h4>
+                            <p>אימות מסמכים, חתימות נוטריוניות, ייפויי כוח נוטריוניים ומסמכים לשימוש בחו"ל.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_practice mt-30 d-sm-flex">
+                        <div class="practice_icon">
+                            <i class="lni lni-money-protection"></i>
+                        </div>
+                        <div class="practice_content media-body">
+                            <h4 class="practice_title"><a href="#">בנקאות ומשכנתאות</a></h4>
+                            <p>ייעוץ וליווי בעסקאות בנקאיות, לקיחת משכנתאות, מחזור הלוואות וייצוג מול הבנקים.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="single_practice mt-30 d-sm-flex">
                         <div class="practice_icon">
                             <i class="lni lni-briefcase"></i>
                         </div>
                         <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Business Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
+                            <h4 class="practice_title"><a href="#">דיני חוזים</a></h4>
+                            <p>עריכה, בדיקה וניתוח חוזים מסחריים ואישיים, ניהול משא ומתן ופתרון סכסוכים חוזיים.</p>
                         </div>
-                    </div> <!-- single practice -->
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="single_practice mt-30 d-sm-flex">
                         <div class="practice_icon">
-                            <i class="lni lni-graduation"></i>
+                            <i class="lni lni-users"></i>
                         </div>
                         <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Education Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
+                            <h4 class="practice_title"><a href="#">דיני משפחה</a></h4>
+                            <p>ייעוץ וליווי בהליכי גירושין, הסכמי ממון, ירושה וצוואות בגישה רגישה ומקצועית.</p>
                         </div>
-                    </div> <!-- single practice -->
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="single_practice mt-30 d-sm-flex">
@@ -282,278 +352,409 @@
                             <i class="lni lni-consulting"></i>
                         </div>
                         <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Employment Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
+                            <h4 class="practice_title"><a href="#">ייעוץ משפטי כללי</a></h4>
+                            <p>מענה לשאלות משפטיות בטלפון ופגישות ייעוץ - מהיר, ברור ומקצועי לכל צורך.</p>
                         </div>
-                    </div> <!-- single practice -->
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="single_practice mt-30 d-sm-flex">
-                        <div class="practice_icon">
-                            <i class="lni lni-network"></i>
-                        </div>
-                        <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Family Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
-                        </div>
-                    </div> <!-- single practice -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="single_practice mt-30 d-sm-flex">
-                        <div class="practice_icon">
-                            <i class="lni lni-money-location"></i>
-                        </div>
-                        <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Financial Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
-                        </div>
-                    </div> <!-- single practice -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="single_practice mt-30 d-sm-flex">
-                        <div class="practice_icon">
-                            <i class="lni lni-target"></i>
-                        </div>
-                        <div class="practice_content media-body">
-                            <h4 class="practice_title"><a href="#">Criminal Law</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consetetu sadipscing elitr, sed dianonumy eirmod tempor invidunt ulab dolore magna aliquyam erat.</p>
-                        </div>
-                    </div> <!-- single practice -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </section>
 
     <!--====== PRACTICE PART ENDS ======-->
-    
+
     <!--====== CALL TO ACTION PART START ======-->
 
-    <section class="call_action_area pt-115 pb-130 bg_cover" style="background-image: url(/assets/call_action-CA2zG5_F.jpg)">
+    <section class="call_action_area pt-115 pb-130 bg_cover" style="background-image: url(https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600)">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="call_action_content text-center">
-                        <h3 class="action_title"><span>25</span> Years Of Experience In Various Cases</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.Stet clita kasd gubergren.</p>
-                        <a href="#" class="main-btn">Free Consultation</a>
-                    </div> <!-- call action content -->
+                        <h3 class="action_title">שירות מקצועי, מהיר ואנושי</h3>
+                        <p>מאות לקוחות מרוצים סומכים על משרד בן יצחק ירון לטיפול בענייניהם המשפטיים. צרו קשר עוד היום.</p>
+                        <a href="#contact" class="main-btn">ייעוץ ראשוני</a>
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </section>
 
     <!--====== CALL TO ACTION PART ENDS ======-->
-    
-    <!--====== OUR LAWYER PART START ======-->
 
-    <section id="team" class="our_lawyer_area pt-120 pb-130">
+    <!--====== REVIEWS PART START ======-->
+
+    <section id="reviews" class="pt-120 pb-130">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section_title text-center pb-25">
-                        <h3 class="title">Our Expert Lawyers</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna </p>
-                    </div> <!-- section title -->
+                <div class="col-lg-8 text-center">
+                    <div class="section_title pb-20">
+                        <h3 class="title">מה הלקוחות אומרים</h3>
+                        <p>ביקורות אמיתיות מלקוחות מרוצים של משרד בן יצחק ירון</p>
+                    </div>
                 </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_lawyer mt-30 text-center">
-                        <div class="lawyer_image">
-                            <img src="/assets/lawyer-1-C_QKjkXN.jpg" alt="lawyer">
-                            
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="lawyer_content">
-                            <h4 class="lawyer_name"><a href="#">Robert John</a></h4>
-                            <p>Criminal Lawyer</p>
-                        </div>
-                    </div> <!-- single lawyer -->
+            </div>
+
+            <div class="reviews_summary">
+                <div class="reviews_score">5.0</div>
+                <div class="reviews_score_detail">
+                    <div class="reviews_score_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div style="font-weight:700; font-size:16px; margin-top:4px;">דירוג מושלם בגוגל</div>
+                    <div class="reviews_score_count">מבוסס על 30+ ביקורות</div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_lawyer mt-30 text-center">
-                        <div class="lawyer_image">
-                            <img src="/assets/lawyer-2-BIia3vma.jpg" alt="lawyer">
-                            
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
+            </div>
+
+            <div class="reviews_grid">
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Andrii Dzhuraniuk</p>
+                            <p class="review_date">לפני 7 חודשים</p>
                         </div>
-                        <div class="lawyer_content">
-                            <h4 class="lawyer_name"><a href="#">John Doe</a></h4>
-                            <p>Business Lawyer</p>
-                        </div>
-                    </div> <!-- single lawyer -->
+                    </div>
+                    <p class="review_text">ירון עזר לנו מאוד ונתן שרות מעולה, מהיר ומסור. הוא סיפק פתרון מושלם ומומחיותו בכל הנוגע למקרקעין ובנקים היה מאוד רלוונטי. ממליץ בחום ואפנה שוב במידת הצורך.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה בהמשך</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_lawyer mt-30 text-center">
-                        <div class="lawyer_image">
-                            <img src="/assets/lawyer-3-KvJI0fzf.jpg" alt="lawyer">
-                            
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ה</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Hanna Rabinovitch</p>
+                            <p class="review_date">לפני 2 שנים</p>
                         </div>
-                        <div class="lawyer_content">
-                            <h4 class="lawyer_name"><a href="#">Chris Dave</a></h4>
-                            <p>Finance Lawyer</p>
-                        </div>
-                    </div> <!-- single lawyer -->
+                    </div>
+                    <p class="review_text">היינו צריכים חתימת נוטריון לצורך קבלת משכנתא. בשש וחצי התקשרנו, בשבע וחצי כבר היינו עם החתימה ביד. וזה עוד כשאני ובעלי הגענו לחתום בנפרד. שירות מדהים!</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single_lawyer mt-30 text-center">
-                        <div class="lawyer_image">
-                            <img src="/assets/lawyer-4-sSlv0OC9.jpg" alt="lawyer">
-                            
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                            </ul>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ח</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Hagit Navon</p>
+                            <p class="review_date">לפני 3 שנים · ממליץ/ה מקומי/ת</p>
                         </div>
-                        <div class="lawyer_content">
-                            <h4 class="lawyer_name"><a href="#">Micheal Jordan</a></h4>
-                            <p>Family Lawyer</p>
-                        </div>
-                    </div> <!-- single lawyer -->
+                    </div>
+                    <p class="review_text">מומלץ בחום! חיפשנו עורך דין ברמת גן ושמחים שהגענו לעו"ד ירון בן יצחק. מענה מהיר, מקצועי, זמין לכל שאלה. משרד נעים, מצאנו חניה בקלות בשעות הבוקר. בהחלט נחזור.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">שמחתי לעזור. לרשותכם בכל עת, בהצלחה</p>
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ח</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Hanse 105105 (Hanan Shophet)</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">עורך דין מצויין משיכמו ומעלה. אוהב לתת שירות. מזל שיש עורכי דין כמו ירון בארץ ישראל. כל הכבוד לירון באמת.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ד</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">דורון שקרוב</p>
+                            <p class="review_date">לפני 5 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות אמין, מקצועי, מהיר והכי חשוב - אנושי. מומלץ בחום!</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">מ</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Marina Chervatzki</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">מקצועי, שירותי, קשוב ואפילו מאוד נחמד!! ביצע עבורנו שירות נוטריוני מהרגע להרגע והיינו מאוד מרוצים!</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">מ</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Michael Dashevsky</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">מקום נגיש, משרד נח עם שרותים. הגענו עם ילדים קטנים בהתראה מוקדמת והוא קיבל אותנו בסבר פנים יפות ובכיף! תודה.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">י</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Yevgeni Sparber</p>
+                            <p class="review_date">לפני 3 שנים · ממליץ/ה מקומי/ת</p>
+                        </div>
+                    </div>
+                    <p class="review_text">קיבלנו שירות מעולה מעו״ד בן יצחק. מומלץ בחום.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Eli Ko</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">קיבלנו שירות הוגן במחיר הוגן, בהקדם האפשרי ובסבר פנים יפות.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ל</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">liron tuzr</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות מהיר ויחס הוגן, בקי ברזי החוק.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ש</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">שלומי שקד</p>
+                            <p class="review_date">לפני 2 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">מאוד מרוצה מהשירות - מקצועיות, אמינות. ממליץ בחום.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">י</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Yatir Avisar</p>
+                            <p class="review_date">לפני 2 שנים · ממליץ/ה מקומי/ת</p>
+                        </div>
+                    </div>
+                    <p class="review_text">נתן מענה מהיר מאוד, יעיל. מומלץ.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ח</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">חגית ינאי</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">הייתי צריכה חתימת נוטריון וקיבלתי שרות מעולה ומהיר.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">שמחתי לעזור, בהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ד</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Dima P.</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות אדיב, מקצועי ומהיר. מומלץ בחום!!!</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ש</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">שני כהן</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">ייעץ לי בטלפון, עזר לי הרבה, אני מאוד מרוצה.</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ו</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Valeria Fanuk</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">תודה על שירות מהיר ומקצועי! ממליצה בחום!</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Adi Levy</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">הוגן, אמין, מהיר, מסביר ועוזר. מקצועי.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ש</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">shahar appel</p>
+                            <p class="review_date">לפני 3 שנים · ממליץ/ה מקומי/ת</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות נהדר ואדיב. מקצועי.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">בהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ג</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">jacob berezovsky</p>
+                            <p class="review_date">לפני 5 שנים · ממליץ/ה מקומי/ת</p>
+                        </div>
+                    </div>
+                    <p class="review_text">אחלה מחיר, שירות זריז ומהיר. ממליץ בחום!</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">אמיר סכר</p>
+                            <p class="review_date">לפני 3 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">מספר אחד, מקצועי ומומלץ ביותר!</p>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">מ</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">מיתר שמאי</p>
+                            <p class="review_date">לפני שנה</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות מקצועי ואדיב.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">שמחתי לעזור, תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">אביעד ורניק</p>
+                            <p class="review_date">לפני 4 שנים</p>
+                        </div>
+                    </div>
+                    <p class="review_text">מהיר, אמין וישר.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">א</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">איילת פוגל</p>
+                            <p class="review_date">לפני שנה</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירות מצויין!!!!!</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">שמחתי לעמוד לשירותך, תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+                <div class="review_card">
+                    <div class="review_header">
+                        <div class="review_avatar">ש</div>
+                        <div class="review_meta">
+                            <div class="review_stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <p class="review_name">Shay Mamo</p>
+                            <p class="review_date">לפני 7 חודשים · ממליץ/ה מקומי/ת</p>
+                        </div>
+                    </div>
+                    <p class="review_text">שירותי נוטריון טובים.</p>
+                    <div class="owner_reply">
+                        <div class="owner_reply_label">בן יצחק ירון (הבעלים)</div>
+                        <p class="owner_reply_text">תודה ובהצלחה</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!--====== OUR LAWYER PART ENDS ======-->
-    
-    <!--====== TESTIMONIAL PART START ======-->
+    <!--====== REVIEWS PART ENDS ======-->
 
-    <section id="testimonial" class="testimonial_area bg_cover pt-120 pb-130" style="background-image: url(/assets/testimonial-Cn_2c9_b.jpg)">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section_title section_title_2 text-center pb-30">
-                        <h3 class="title">From Our Clients</h3>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="testimonial_active">
-                        <div class="single_testimonial pt-30 text-center">
-                            <div class="testimonial_image">
-                                <img src="/assets/author-1-DWz9q4DJ.jpg" alt="author">
-                                <div class="quota">
-                                    <i class="lni lni-quotation"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_content">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit ametc onsetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt.</p>
-                                
-                                <h5 class="author_name">Rob Hope</h5>
-                                <span>Business Owner</span>
-                            </div>
-                        </div> <!-- testimonial content -->
-                        <div class="single_testimonial pt-30 text-center">
-                            <div class="testimonial_image">
-                                <img src="/assets/author-2-B9FnI3OQ.jpg" alt="author">
-                                <div class="quota">
-                                    <i class="lni lni-quotation"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_content">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit ametc onsetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt.</p>
-                                
-                                <h5 class="author_name">Sarah Doe</h5>
-                                <span>Artist</span>
-                            </div>
-                        </div> <!-- testimonial content -->
-                        <div class="single_testimonial pt-30 text-center">
-                            <div class="testimonial_image">
-                                <img src="/assets/author-3-5HpVs_XP.jpg" alt="author">
-                                <div class="quota">
-                                    <i class="lni lni-quotation"></i>
-                                </div>
-                            </div>
-                            <div class="testimonial_content">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna Lorem ipsum dolor sit ametc onsetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt.</p>
-                                
-                                <h5 class="author_name">Michel Jordan</h5>
-                                <span>Scientist</span>
-                            </div>
-                        </div> <!-- testimonial content -->
-                    </div> <!-- testimonial active -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== TESTIMONIAL PART ENDS ======-->
-    
-    <!--====== BLOG PART START ======-->
-
-    <section id="blog" class="blog_area pt-120 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section_title text-center pb-25">
-                        <h3 class="title">From The Blog</h3>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore et dolore magna </p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7">
-                    <div class="single_blog mt-30">
-                        <div class="blg_image">
-                            <img src="/assets/blog-1-BKnC9XC7.jpg" alt="blog">
-                        </div>
-                        <div class="blg_content">
-                            <h4 class="blog_title"><a href="#">Lorem ipsum dolor sitcns etetursa pscing elitr sed diannumy.</a></h4>
-                            <p>Lorem ipsum dolor sitcons etetursa pscing elitr, sed diannumy eirmod tempor iannum eirmod tempor  invidunt.</p>
-                            <a href="#" class="more">Read More...</a>
-                        </div>
-                    </div> <!-- single blog -->
-                </div>
-                <div class="col-lg-4 col-md-7">
-                    <div class="single_blog mt-30">
-                        <div class="blg_image">
-                            <img src="/assets/blog-2-RQrXSTo2.jpg" alt="blog">
-                        </div>
-                        <div class="blg_content">
-                            <h4 class="blog_title"><a href="#">Lorem ipsum dolor sitcns etetursa pscing elitr sed diannumy.</a></h4>
-                            <p>Lorem ipsum dolor sitcons etetursa pscing elitr, sed diannumy eirmod tempor iannum eirmod tempor  invidunt.</p>
-                            <a href="#" class="more">Read More...</a>
-                        </div>
-                    </div> <!-- single blog -->
-                </div>
-                <div class="col-lg-4 col-md-7">
-                    <div class="single_blog mt-30">
-                        <div class="blg_image">
-                            <img src="/assets/blog-3-qtepjzFS.jpg" alt="blog">
-                        </div>
-                        <div class="blg_content">
-                            <h4 class="blog_title"><a href="#">Lorem ipsum dolor sitcns etetursa pscing elitr sed diannumy.</a></h4>
-                            <p>Lorem ipsum dolor sitcons etetursa pscing elitr, sed diannumy eirmod tempor iannum eirmod tempor  invidunt.</p>
-                            <a href="#" class="more">Read More...</a>
-                        </div>
-                    </div> <!-- single blog -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== BLOG PART ENDS ======-->
-    
     <!--====== CONTACT PART START ======-->
 
     <section id="contact" class="contact_area pt-80 pb-130 gray-bg">
@@ -562,15 +763,15 @@
                 <div class="col-lg-6">
                     <div class="contact_content mt-40">
                         <div class="section_title pb-25">
-                            <h3 class="title">Free Case Evaluation</h3>
-                            <p>Lorem ipsum dolor sitcons etetursa pscing elitr, sed diannumy eirmod tempor iannum eirmod tempor  invidunt.Lorem ipsum dolor.</p>
-                        </div> <!-- section title -->
-                        <div class="contact_info">
-                            <h5 class="info_title">Call Us 24/7</h5>
-                            <p class="number">000-2222-5555</p>
-                            <p>Lorem ipsum dolor sitcons etetursa pscing elitr, sed diannumy eirmod tempor iannum.</p>
+                            <h3 class="title">צור קשר</h3>
+                            <p>פנה אלינו לייעוץ ראשוני ונשמח לסייע לך בכל שאלה משפטית.</p>
                         </div>
-                    </div> <!-- contact content -->
+                        <div class="contact_info">
+                            <h5 class="info_title">זמינים עבורך</h5>
+                            <p class="number">03-575-4040</p>
+                            <p>משרדנו ממוקם ברמת גן. ניתן לתאם פגישה בטלפון או לשלוח פנייה בטופס.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="contact_form pt-20">
@@ -578,66 +779,45 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="single_form">
-                                        <input name="name" type="text" placeholder="Name">
-                                    </div> <!-- single form -->
+                                        <input name="name" type="text" placeholder="שם מלא">
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_form">
-                                        <input name="email" type="email" placeholder="Email">
-                                    </div> <!-- single form -->
+                                        <input name="email" type="email" placeholder="דואר אלקטרוני">
+                                    </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_form">
-                                        <input name="practice" type="text" placeholder="Practice Area">
-                                    </div> <!-- single form -->
+                                        <input name="phone" type="tel" placeholder="טלפון">
+                                    </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_form">
-                                        <textarea id="message" placeholder="Message"></textarea>
-                                    </div> <!-- single form -->
+                                        <input name="practice" type="text" placeholder="תחום פנייה">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single_form">
+                                        <textarea id="message" placeholder="תוכן הפנייה"></textarea>
+                                    </div>
                                 </div>
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
-                                    <div class="single_form text-right">
-                                        <button class="main-btn">Send Message</button>
-                                    </div> <!-- single form -->
+                                    <div class="single_form text-left">
+                                        <button class="main-btn">שלח פנייה</button>
+                                    </div>
                                 </div>
-                            </div> <!-- row -->
+                            </div>
                         </form>
-                    </div> <!-- contact form -->
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
-    
-    <!--====== BRAND PART START ======-->
 
-    <section id="brand" class="brand_area text-center pt-100 pb-130">
-        <div class="container">
-            <div class="brand_wrapper d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
-                <div class="single_brand">
-                    <img src="data:image/png;base64,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" alt="brand">
-                </div> <!-- single brand -->
-                <div class="single_brand">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAABoCAMAAACQTQ+2AAADAFBMVEX///84Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk0l47UOAAABAHRSTlMALH293uzn0KVeDgqE9//TTkSXw4MaPAcDCxTAcZ27K+WtBlLM4IUJAqvktZB+f5TzTIm6ITH5gCbRZxKO9doPdD95xpE7AXWTKVSkRiCi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" alt="brand">
-                </div> <!-- single brand -->
-                <div class="single_brand">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAABoCAMAAACQTQ+2AAAC/VBMVEX///84Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk2FY/K6AAAA/3RSTlMAEFCHq6Sio7jOz7Z2PgjdvnM0GAcCAw8maMD/2Tk9QszwixGN+mUMmtZDK801+D/m2iQBpXDx7i7VXh/i/lH89DMGw5CEDvWAL/dXoCKwxzr9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" alt="brand">
-                </div> <!-- single brand -->
-                <div class="single_brand">
-                    <img src="/assets/brand-4-B6V0AX9h.png" alt="brand">
-                </div> <!-- single brand -->
-                <div class="single_brand">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAABoCAMAAACQTQ+2AAAC/VBMVEX///84Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk04Qk2FY/K6AAAA/3RSTlMAFlabwd7i4curbiYdjef/7682YeX+ow0jZs79kQkGjjNd88YcAqj3z4gsNfIahmpPwEl1oITSULD1Kt2WmQG/7hlXfAw93KlgGwUkfa3X8Oye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" alt="brand">
-                </div> <!-- single brand -->
-            </div> <!-- brand wrapper -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== BRAND PART ENDS ======-->
-    
     <!--====== FOOTER PART START ======-->
 
     <footer id="footer" class="footer_area">
@@ -646,126 +826,92 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="subscribe_title">
-                            <h4 class="title">Subscribe Our Newsletter</h4>
-                        </div> <!-- subscribe title -->
+                            <h4 class="title">הישארו מעודכנים</h4>
+                            <p style="color:#aaa; font-size:14px;">הירשמו לניוזלטר שלנו לעדכונים משפטיים</p>
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="subscribe_form">
                             <form action="#">
-                                <input type="text" placeholder="hello@yourdomain.com">
-                                <button class="main-btn">Submit</button>
+                                <input type="email" placeholder="כתובת הדואר האלקטרוני שלך">
+                                <button class="main-btn">הרשמה</button>
                             </form>
-                        </div> <!-- subscribe title -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- container -->
-        
+                </div>
+            </div>
+        </div>
+
         <div class="footer_widget pt-15 pb-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-7">
                         <div class="footer_about mt-50">
                             <a href="#">
-                                <img src="data:image/png;base64,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" alt="logo">
+                                <span style="font-size:20px; font-weight:800; color:#c9a96e; display:block; margin-bottom:6px;">בן יצחק ירון</span>
+                                <span style="font-size:13px; color:#aaa;">משרד עורכי דין ונוטריון</span>
                             </a>
-                            <p>Lorem ipsum dolor sit ametcons etur sadipscing elitr, sed nonumy eirmod tempor invidunt ut labore dolore magna aliquyam eirmod tempor invidunt ut labore.</p>
-                        </div> <!-- footer about -->
+                            <p style="margin-top:16px;">שירות משפטי מקצועי, אמין ואנושי. המשרד ממוקם ברמת גן ומשרת לקוחות מכל רחבי המרכז.</p>
+                        </div>
                     </div>
                     <div class="col-lg-5 col-md-7">
                         <div class="footer_wrapper d-flex flex-wrap">
                             <div class="footer_link mt-45">
-                                <h5 class="footer_title">Resources</h5>
+                                <h5 class="footer_title">מידע משפטי</h5>
                                 <ul class="link">
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Cookie Policy</a></li>
-                                    <li><a href="#">Complaints Policy</a></li>
+                                    <li><a href="#">תנאי שימוש</a></li>
+                                    <li><a href="#">מדיניות פרטיות</a></li>
+                                    <li><a href="#">נגישות</a></li>
                                 </ul>
-                            </div> <!-- footer link -->
+                            </div>
                             <div class="footer_link mt-45">
-                                <h5 class="footer_title">Quick Link</h5>
+                                <h5 class="footer_title">ניווט מהיר</h5>
                                 <ul class="link">
-                                    <li><a href="#">Labor and Employment</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Intellectual Property</a></li>
-                                    <li><a href="#">Legal IT Services</a></li>
-
+                                    <li><a href="#about">אודות</a></li>
+                                    <li><a href="#practice">תחומי עיסוק</a></li>
+                                    <li><a href="#reviews">ביקורות</a></li>
+                                    <li><a href="#contact">צור קשר</a></li>
                                 </ul>
-                            </div> <!-- footer link -->
-                        </div> <!-- footer wrapper -->
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-5">
                         <div class="footer_social mt-45">
-                            <h5 class="footer_title">Follo Us</h5>
+                            <h5 class="footer_title">עקבו אחרינו</h5>
                             <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook-filled"></i> Facebook</a></li>
-                                <li><a href="#"><i class="lni lni-twitter-original"></i> Twitter</a></li>
-                                <li><a href="#"><i class="lni lni-linkedin-original"></i> Linkedin</a></li>
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i> פייסבוק</a></li>
+                                <li><a href="#"><i class="lni lni-instagram-original"></i> אינסטגרם</a></li>
+                                <li><a href="#"><i class="lni lni-linkedin-original"></i> לינקדאין</a></li>
                             </ul>
-                        </div> <!-- footer social -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-        
-        <div class="footer_copyright">
-            <div class="container">
-                <div class="copyright">
-                    <p>Template Designed and Developed by <a href="https://uideck.com/" rel="nofollow">UIdeck</a></p>
-                </div> <!-- copyright -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
-    </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
-    
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
-    
-    <!--====== PART START ======-->
-
-<!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-">
-                    
                 </div>
             </div>
         </div>
-    </section>
--->
 
-    <!--====== PART ENDS ======-->
+        <div class="footer_copyright">
+            <div class="container">
+                <div class="copyright">
+                    <p>כל הזכויות שמורות &copy; 2024 בן יצחק ירון - משרד עורכי דין ונוטריון</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!--====== FOOTER PART ENDS ======-->
 
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
 
+    <script type="text/javascript" src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrolling-nav.js"></script>
+    <script type="text/javascript" src="assets/js/ajax-contact.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <!--====== Jquery js ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    
-    <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
-    
-    <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/scrolling-nav.js"></script>
-    
-    <!--====== Ajax Contact js ======-->
-    <script src="assets/js/ajax-contact.js"></script>
-    
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-    
 </body>
 
 </html>
